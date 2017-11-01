@@ -1,0 +1,37 @@
+<h1>Laus' Wish List</h1>
+
+<div class="container">
+  <div class="row">
+    <% @items.each do |item|  %>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://static.dreambaby.be/wcsstore/ColruytB2CCAS/JPG/JPG/646x1000/std.lang.all/10/16/asset-1121016.jpg');">
+        <p><%= item.name %></p>
+        <p>Price: <%= item.price %> €</p>
+        <%= link_to "More details", item_path(item), class: "btn btn-danger" %>
+        <p><%= item.bought ? "SOLD!" : "" %></p>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+<!-- <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <div class="card">
+            <div class="card-body" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://static.dreambaby.be/wcsstore/ColruytB2CCAS/JPG/JPG/646x1000/std.lang.all/10/16/asset-1121016.jpg');">
+              <h3 class="card-category">Tula draagzak</h3>
+              <div class="card-desc">
+                <p>een korte beschrijving van het product in kwestie</p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <p class="card-price">135 €</p>
+              <ul class="card-links">
+                <li><a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-share" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+ -->

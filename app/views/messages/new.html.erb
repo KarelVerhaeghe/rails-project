@@ -1,0 +1,6 @@
+<%= simple_form_for [@message] do |f| %>
+  <%= f.input :name %>
+  <%= f.input :content %>
+
+  <%= f.submit "Submit your message", class: "btn btn-warning" %>
+<% end %>

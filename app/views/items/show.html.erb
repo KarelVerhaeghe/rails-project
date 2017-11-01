@@ -1,0 +1,6 @@
+<h1><%= @item.name %></h1>
+<h3>Price: <%= @item.price %> €</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius architecto perferendis repudiandae! Vero incidunt eveniet minima cumque odio, iusto, labore architecto laboriosam necessitatibus quisquam libero facilis excepturi consequatur enim quam?</p>
+<% if @item.bought %>
+  <p>Bought on: <%= @item.date %> by <%= @item.byer %></p>
+<% end %>

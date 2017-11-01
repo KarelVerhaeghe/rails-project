@@ -1,0 +1,116 @@
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 25px;
+  padding-bottom: 75px;
+}
+
+.card {
+  flex: 1 1 auto;
+  min-width: 250px;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: height margin 300ms;
+}
+
+.card {
+  height: 250px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  color: white;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+}
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.card-description h2 {
+  font-size: 22px;
+}
+.card-description p {
+  font-size: 15px;
+}
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index:2;
+  background: black;
+  opacity: 0;
+}
+.card-link:hover{
+  opacity: 0.1;
+}
+
+
+
+.card:hover {
+  margin-top: -25px;
+  height: 303px;
+}
+
+.card-body {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  color: white;
+}
+
+
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.card-desc {
+  position: absolute;
+  bottom: 12px;
+  left: 10px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-price {
+  padding-left: 10px;
+}
+
+.card-links {
+  flex-grow: 1;
+  width: 50%;
+  color: black;
+}
+
+.card-links > li {
+  display: inline-block;
+  padding: 0px 4px;
+  padding-left: 0px;
+  color: black;
+}
+
+.game-card {
+  height: 350px;
+}
