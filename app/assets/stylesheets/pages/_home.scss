@@ -1,1 +1,17 @@
 // Specific CSS for your home-page
+
+.triangle-1 {
+  width: 60px;
+  height: 30px;
+  border-bottom: solid 30px rgb(200,30,50);
+  border-left: solid 30px transparent;
+  border-right: solid 30px transparent;
+}
+
+.triangle-2 {
+  width: 60px;
+  height: 30px;
+  border-top: solid 30px rgb(200,30,50);
+  border-left: solid 30px transparent;
+  border-right: solid 30px transparent;
+}
